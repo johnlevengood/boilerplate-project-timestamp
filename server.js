@@ -45,7 +45,7 @@ app.get('/api/timestamp/:date', (req,res) => {
         date = moment.utc(Number(date))
     }
     if (date.isValid() === false){
-        return res.status(400).send({error:'Invalid Date'})
+        return res.send({ error : "Invalid Date" })
     }
     const resp = {
         unix: date.valueOf(),
@@ -59,3 +59,14 @@ app.get('/api/timestamp/:date', (req,res) => {
 app.listen(PORT, function () {
   console.log('Your app is listening on port ' + PORT);
 });
+
+// let date = req.params.date
+// if (/\d{5,}/.test(date)){
+//     return res.status(200).send({ unix: date, utc: new Date(parseInt(date)).toUTCString() })
+// }
+// let dateObj = new Date(date)
+// if (dateObj.toString() === 'Invalid Date'){
+//     return res.status(400).send({ error : "Invalid Date" })
+// }
+
+// return res.status(200).send(resp)
