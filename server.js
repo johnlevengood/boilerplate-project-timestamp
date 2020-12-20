@@ -4,7 +4,7 @@
 // init project
 var express = require('express');
 const moment = require('moment')
-const PORT = process.env.port || 3000
+const PORT = process.env.PORT || 3000
 var app = express();
 
 // enable CORS (https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)
