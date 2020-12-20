@@ -1,2 +1,2 @@
-# boilerplate-project-timestamp
-A boilerplate for a freeCodeCamp project.
+
+# [Timestamp Microservice](https://www.freecodecamp.org/learn/apis-and-microservices/apis-and-microservices-projects/timestamp-microservice)
