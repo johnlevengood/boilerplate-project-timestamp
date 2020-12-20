@@ -56,6 +56,6 @@ app.get('/api/timestamp/:date', (req,res) => {
 })
 
 // listen for requests :)
-var listener = app.listen(PORT, function () {
+app.listen(PORT, function () {
   console.log('Your app is listening on port ' + PORT);
 });
